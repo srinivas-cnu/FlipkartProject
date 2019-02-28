@@ -28,7 +28,7 @@ public class LoginServlet extends HttpServlet {
 	    String n=request.getParameter("Username");  
 	    String p=request.getParameter("password");  
 	    if(LoginDao.validate(n, p)){  
-	        RequestDispatcher rd=request.getRequestDispatcher("HomePage.html");  
+	        RequestDispatcher rd=request.getRequestDispatcher("Cart.html");  
 	        rd.forward(request,response);  
 	    }  
 	    else{  
